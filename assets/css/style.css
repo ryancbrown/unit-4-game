@@ -1,0 +1,75 @@
+html { 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+.c {
+    float: left;
+    padding: 0 30px 0 0;
+    width: 15%;
+}
+
+img { 
+    width:100%;
+}
+
+.container { 
+    margin: 0 auto;
+    width: 960px; 
+}
+
+#goal { 
+    font-size: 40px;
+    margin: 0 0 30px;
+    padding:20px 0px 20px 0;
+    text-align: center;
+    width:100%;
+}
+
+#game-container {    
+    border-top:4px solid #000; 
+    border-bottom: 4px solid #000; 
+    overflow:auto;
+    padding:30px 20px; 
+    width:100%;
+}
+
+#gem-container { 
+    float:left; 
+    width:720px;
+}
+
+#score-container { 
+    border:1px dashed #ccc;
+    float:right; 
+    height:72px;  
+    line-height:2em;
+    padding:20px; 
+    text-align: center;
+    width:198px; 
+}
+
+#gems { 
+    overflow: auto;
+    text-align: center;
+}
+
+#score { 
+    min-height:100%; 
+    font-size: 40px;
+    text-align: center;
+}
+
+#losses, #wins { 
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 2em;
+}
+
+#wins { 
+    margin-top:30px
+}
+
+p { 
+    display: none
+}
