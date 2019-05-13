@@ -1,13 +1,13 @@
 var w = 0; 
 var l = 0;
 var values = []; // Gem values
-var game = setupGame(); // Jump to L7
+var game = setupGame(); // Jump to L6
 
 function setupGame() { 
     var game = { 
         wins: w,
         losses: l,
-        round: randomNumber() // Jump to L31
+        round: randomNumber() // Jump to L30
     };
 
     // Gem values
@@ -43,7 +43,7 @@ function hasWon(score) {
         alert('Nice job! You found the correct gem combination for ' + game.round.number + '.' )
         resetGame() // Jump to L60
     } else {
-        hasLost(score) // Jump to L51
+        hasLost(score) // Jump to L50
     };  
 };
 
@@ -51,7 +51,7 @@ function hasLost(score) {
     if(score > game.round.number) { 
         l++ // increase loss count
         alert(score + ' is greater than ' + game.round.number + '. Let\'s try this again.')
-        resetGame() // Jump to L60
+        resetGame() // Jump to L59
     };
 };
 
@@ -60,7 +60,7 @@ function resetGame() {
     values = []; // Clear old gem values
     game.round.score = 0; // Set player score to 0
     $('.c').detach(); // Clear old gems on page
-    game = setupGame(); // Create new round (Jump to L7)
+    game = setupGame(); // Create new round (Jump to L6)
 
     // Update page
     $('#score').empty().text(game.round.score)
