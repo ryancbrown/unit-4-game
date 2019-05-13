@@ -7,9 +7,34 @@
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"> 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <title>Document</title>
+    <title>Gem Collector Game</title>
 </head>
 <body>
+    <div id="dim">
+        <div id="instructions"> 
+            <h1>
+                Game instructions
+            </h1>
+            <hr>
+              <br>
+                <p>
+                    Click the gems until your score matches the number 
+                    shown at the top of the page. The game is lost if your 
+                    score exceeds this number. 
+                </p>
+        
+                <p> 
+                    Gem values are not revealed until clicked. 
+                    Keep each value in mind as you progess through the round. 
+                    Game is reset once your score is greater than or 
+                    equal to the number shown at the top of the page.
+                </p>
+              <br>
+              <br>
+            <button id="start-game">Hide Instructions</button>
+        </div>
+    </div>
+
     <div class="container">
         <div id="goal">
 
@@ -38,12 +63,12 @@
         <div id="wins">
             Wins: 0
         </div>
-        
+
         <div id="losses">
             Losses: 0
         </div>
     </div>
-
+    <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 </body>

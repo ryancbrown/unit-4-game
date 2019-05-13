@@ -3,14 +3,69 @@ html {
     font-weight: 100;
 }
 
+h1 { 
+    font-size: 26px;
+}
+
+hr{ 
+    border-top: .5px dashed #ccc; 
+    margin: 15px 0 10px 0;
+}
+
+#dim {
+    background: rgba(0, 0, 0, 0.9);
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+#instructions { 
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    left: 50%;
+    min-height: 400px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px; 
+}
+
+#instructions > p { 
+    line-height: 2em;
+    margin: 0 0 15px 0
+}
+
+#start-game { 
+    border: 1px solid #027AF9;
+    border-radius: 10px;
+    background-color: #027AF9;
+    color: #fff; 
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 15px 30px; 
+    width: 100%;
+}
+
 .c {
     float: left;
     padding: 0 30px 0 0;
     width: 15%;
 }
 
+.c > p { 
+    display: none;
+}
+
 img { 
-    width:100%;
+    width: 100%;
 }
 
 .container { 
@@ -21,32 +76,32 @@ img {
 #goal { 
     font-size: 40px;
     margin: 0 0 30px;
-    padding:20px 0px 20px 0;
+    padding: 50px 0px 20px 0;
     text-align: center;
-    width:100%;
+    width: 100%;
 }
 
 #game-container {    
-    border-top:4px solid #000; 
+    border-top: 4px solid #000; 
     border-bottom: 4px solid #000; 
-    overflow:auto;
-    padding:30px 20px; 
-    width:100%;
+    overflow: auto;
+    padding: 30px 20px; 
+    width: 100%;
 }
 
 #gem-container { 
-    float:left; 
-    width:720px;
+    float: left; 
+    width: 720px;
 }
 
 #score-container { 
-    border:1px dashed #ccc;
-    float:right; 
-    height:72px;  
-    line-height:2em;
-    padding:20px; 
+    border: 1px dashed #ccc;
+    float: right; 
+    height: 72px;  
+    line-height: 2em;
+    padding: 20px; 
     text-align: center;
-    width:198px; 
+    width: 198px; 
 }
 
 #gems { 
@@ -55,7 +110,7 @@ img {
 }
 
 #score { 
-    min-height:100%; 
+    min-height: 100%; 
     font-size: 40px;
     text-align: center;
 }
@@ -67,9 +122,5 @@ img {
 }
 
 #wins { 
-    margin-top:30px
-}
-
-p { 
-    display: none
+    margin-top: 30px
 }
