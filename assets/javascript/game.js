@@ -79,7 +79,7 @@ $('#gems').on('click', '.c', function() {
     hasWon(game.round.score)
 });
 
-// Hide the instructions when start-game button is clicked
+// Hide the instructions when button is clicked
 $('#start-game').on('click', function(){
     $('#dim').css("display", "none")
-})
+});
